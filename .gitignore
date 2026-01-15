@@ -1,0 +1,189 @@
+@"
+# ==========================================
+# Node.js — Front-end and Back-end
+# ==========================================
+
+# Dependencies in any folder
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build folders
+dist/
+**/dist/
+build/
+**/build/
+out/
+**/out/
+
+# Test coverage
+coverage/
+**/coverage/
+.nyc_output/
+**/.nyc_output/
+
+# Cache and temporary files
+.cache/
+**/.cache/
+.temp/
+**/.temp/
+tmp/
+**/tmp/
+*.tmp
+
+# ==========================================
+# Next.js
+# ==========================================
+
+.next/
+**/.next/
+.vercel/
+**/.vercel/
+
+# Next.js generated files
+next-env.d.ts
+
+# ==========================================
+# React / Vite
+# ==========================================
+
+.vite/
+**/.vite/
+
+# ==========================================
+# Angular
+# ==========================================
+
+.angular/
+**/.angular/
+
+# ==========================================
+# NestJS / TypeScript
+# ==========================================
+
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# ==========================================
+# Package manager cache
+# ==========================================
+
+.npm/
+**/.npm/
+.yarn/
+**/.yarn/
+.pnpm-store/
+**/.pnpm-store/
+
+# Do not ignore lock files:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==========================================
+# Visual Studio / C / C++
+# ==========================================
+
+.vs/
+**/.vs/
+
+Debug/
+**/Debug/
+Release/
+**/Release/
+x64/
+**/x64/
+x86/
+**/x86/
+
+*.exe
+*.dll
+*.pdb
+*.obj
+*.ilk
+*.idb
+*.ipch
+*.suo
+*.user
+*.tlog
+*.log
+*.recipe
+*.enc
+
+# Compiled C/C++ files
+*.o
+*.out
+*.a
+*.lib
+*.exp
+
+# Keep project files:
+# *.sln
+# *.vcxproj
+# *.vcxproj.filters
+
+# ==========================================
+# VS Code / JetBrains
+# ==========================================
+
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+
+*.iml
+
+# Keep optional shared VS Code configuration
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ==========================================
+# Operating system files
+# ==========================================
+
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+desktop.ini
+
+# ==========================================
+# Local databases and uploads
+# ==========================================
+
+*.sqlite
+*.sqlite3
+
+# Uncomment these only if uploaded files should not be pushed
+# uploads/
+# **/uploads/
+
+# ==========================================
+# Other generated files
+# ==========================================
+
+.eslintcache
+.stylelintcache
+.parcel-cache/
+**/.parcel-cache/
+.turbo/
+**/.turbo/
+"@ | Set-Content .gitignore
