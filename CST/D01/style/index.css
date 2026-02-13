@@ -1,0 +1,23 @@
+/* Global */
+body {
+    background-color: pink;
+
+}
+.inner {
+    text-align: center;
+    height: 100%;
+    
+}
+
+/* Second page  */
+hr{
+    color: black;
+}
+
+.diff_fonts{
+    font-size: x-large;
+}
+.diff_color{
+color: brown;
+}
+

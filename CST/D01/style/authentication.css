@@ -1,0 +1,56 @@
+/* global */
+body{
+    background-color: rgba(0, 255, 255, 0.262);
+}
+
+.center {
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+
+}
+td{
+        padding: 10px;
+}
+input {
+            width: 250px;
+}
+table , td{
+    border: 5px solid gray ;
+    border-collapse: collapse;
+
+}
+td [type="radio"] {
+    width: 10px;
+}
+td [type="checkbox"] , fieldset [type="checkbox"] {
+    width: 30px;
+}
+td [type="submit"] ,td [type="reset"]  , fieldset [type="submit"]{
+width: fit-content;
+margin-left: 20px;
+}
+.container{
+    width: 378px;
+    padding-top: 10px;
+}
+textarea {
+    resize: none;
+}
+/* login */
+fieldset {
+    border: 7px solid rgba(0, 110, 255, 0.778);
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+}
+fieldset input {
+width: inherit;
+}
+fieldset 
+legend {
+    color: rgba(165, 42, 42, 0.851);
+    font-size: large;
+}
