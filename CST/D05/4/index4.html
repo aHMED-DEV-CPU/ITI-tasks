@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="marbelsContainer" onmouseover="freeze()" onmouseout="keepMoving()">
+        <img src="images/marble1.jpg" alt="">
+        <img src="images/marble1.jpg" alt="">
+        <img src="images/marble1.jpg" alt="">
+        <img src="images/marble1.jpg" alt="">
+        <img src="images/marble1.jpg" alt="">
+    </div>
+    <div id="BtnsContainer">
+        <span>Speed</span>
+        <button type="button" onclick="Increase()">Increase </button>
+        <button type="button" onclick="decrease()">Decrease </button>
+    </div>
+    <span id="Sec">Seconds taken to change</span>
+    <p id="Speed_result"></p>
+    <script src="index4.js"></script>
+</body>
+
+</html>
