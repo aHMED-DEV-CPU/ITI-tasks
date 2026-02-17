@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="childH"></h1>
+    <script>
+        // Text to show 
+        let childText = "Your Message will be displayed char by char After that it will disappear"
+        let lengthOfText = childText.length
+
+        if (window.opener) {
+            //the container that will contain text
+            let childHead = document.getElementById("childH")
+            console.log(childHead);
+            let textContainer = ""
+            //  container 
+            for (let i = 0; i < lengthOfText; i++) {
+                setTimeout(function () {
+                    textContainer += childText[i]
+                    childHead.innerText = textContainer
+                }, i * 100)
+            }
+        }
+        // close after finish typing 
+        setTimeout(() => {
+            window.close()
+        }, lengthOfText * 110);
+    </script>
+</body>
+
+</html>

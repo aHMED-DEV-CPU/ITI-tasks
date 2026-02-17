@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+h1 , h2 {
+    color: #2D3C59;
+}
+span{
+    color: #1D546D;
+}
+
+div{
+
+    text-align: center;
+}
+div img {
+    width: 200px;
+}
+
+p{
+    color: #D73535;
+    font-size: xx-large;
+}
