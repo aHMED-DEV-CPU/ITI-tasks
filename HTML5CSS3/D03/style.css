@@ -1,0 +1,169 @@
+/* 1 */
+.changeEmailAddress{
+    border: 2px solid black ;
+    width: fit-content;
+    padding: 5px 50px 5px 5px;
+}
+.changeEmailAddress span , input {
+    display: block;
+    margin-block: 5px;
+}
+.changeEmailAddress input{
+    border: 2px solid red;
+    outline: 0;
+}
+.changeEmailAddress input:valid{
+        border: 2px solid green;
+}
+.changeEmailAddress input:valid + span {
+    display: none;
+}
+
+/* 2 */
+.imageOpacity {
+    width: 350px;
+}
+.imageOpacity:hover{
+animation-name: imageOpacity;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes imageOpacity {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/* 3 */
+.blink{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blink div {
+    border:2px solid blue;
+    padding-inline: 45px;
+    border-radius: 25px;
+    background-color: cyan;
+    font-weight: 700;
+    color: white;
+}
+.blink div:hover {
+    background-color: darkorchid;
+    box-shadow: 4px 3px 22px blue;
+    transition: all 3s;
+}
+
+/* 4 */
+.card{
+    padding: 7px;
+    border: 5px solid red;
+    width: 350px;
+    border-radius: 25px;
+}
+.card p {
+font-size: 60px;
+font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-block: 15px;
+}
+.card p.right{
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.shape{
+width: fit-content;
+margin: 0 auto;
+margin-block: 78px;
+}
+/* shapes */
+        #triangle-up {
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 70px solid black;
+            position: relative;
+            left: 18px;
+        }
+
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            transform: rotate(180deg);
+            top: 30px;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: black;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        /* 5 */
+        .circleShape{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+.circleShape .inner{
+    position: relative;
+}
+        .circleShape #circle {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 50%
+        }
+        .circleShape #triangle-left {
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-right: 105px solid white;
+            border-bottom: 50px solid transparent;
+            transform-origin: left center;
+            animation-name: closeMouth;
+            animation-duration: 0.5s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+        }
+        @keyframes closeMouth {
+    0% {
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+    
+        100% {
+            border-top: 0px solid transparent;
+            border-bottom: 0px solid transparent;
+        }
+        }
