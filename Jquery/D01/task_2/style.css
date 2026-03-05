@@ -1,0 +1,26 @@
+#header {
+    text-align: right;
+}
+
+li:first-child {
+    background-color: brown;
+    color: wheat;
+    padding: 10px 203px;
+    width: fit-content;
+}
+li a{
+    text-decoration: none;
+    color: burlywood;
+}
+.align-left {
+    text-align: left;
+}
+
+#navigation {
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+.circle {
+    list-style-type: circle;
+}
