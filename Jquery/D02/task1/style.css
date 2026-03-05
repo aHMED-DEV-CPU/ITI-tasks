@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #f5f6fa;
+    margin: 0;
+    padding: 40px;
+}
+
+/* MENU */
+
+#menu {
+    margin-bottom: 30px;
+}
+
+#menu button {
+    width: 120px;
+    height: 45px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #ff8fb1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menu button:hover {
+    background: #ff5f94;
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+
+.section {
+    width: 480px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+}
+
+/* SERVICES */
+
+#servicesSection {
+    width: auto;
+    padding: 20px;
+    box-shadow: none;
+}
+
+#servicesSection ul {
+    width: 220px;
+    margin: auto;
+}
+
+#servicesSection li {
+    background: #ff8fb1;
+    color: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* LIST */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* FORM */
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+#sendBtn,
+#editBtn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #ff8fb1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#sendBtn:hover,
+#editBtn:hover {
+    background: #ff5f94;
+}
+
+/* PREVIEW */
+
+#previewArea {
+    display: none;
+}
+
+/* GALLERY */
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#mainImage {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #eee;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    transform: scale(1.15);
+}
+
