@@ -1,0 +1,219 @@
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+p {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* fonts */
+
+.font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.font-verdana {
+    font-family: Verdana;
+}
+
+.font-georgia {
+    font-family: Georgia, serif;
+}
+
+/* text align */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* line height */
+
+.line-normal {
+    line-height: normal;
+}
+
+.line-15 {
+    line-height: 15px;
+}
+
+.line-1_5 {
+    line-height: 1.5;
+}
+
+.line-2 {
+    line-height: 2;
+}
+
+/* letter spacing */
+
+.space-normal {
+    letter-spacing: normal;
+}
+
+.space-1 {
+    letter-spacing: -1px;
+}
+
+.space-2 {
+    letter-spacing: 2px;
+}
+
+.space-4 {
+    letter-spacing: 4px;
+}
+
+/* transform */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.none-transform {
+    text-transform: none;
+}
+
+/* decoration */
+
+.dec-none {
+    text-decoration: none;
+}
+
+.dec-under {
+    text-decoration: underline;
+}
+
+.dec-line {
+    text-decoration: line-through;
+}
+
+.dec-over {
+    text-decoration: overline;
+}
+
+/* indent */
+
+.indent0 {
+    text-indent: 0;
+}
+
+.indent20 {
+    text-indent: 20px;
+}
+
+.indent40 {
+    text-indent: 40px;
+}
+
+/* font size */
+
+.size14 {
+    font-size: 14px;
+}
+
+.size18 {
+    font-size: 18px;
+}
+
+.size22 {
+    font-size: 22px;
+}
+
+.size28 {
+    font-size: 28px;
+}
+
+/* weight */
+
+.weight-normal {
+    font-weight: normal;
+}
+
+.weight-bold {
+    font-weight: bold;
+}
+
+.weight-light {
+    font-weight: 300;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63939;
+}
+

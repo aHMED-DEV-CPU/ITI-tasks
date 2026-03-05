@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Style Editor</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam temporibus natus quae reiciendis aliquid pariatur
+            doloribus inventore perspiciatis sed, rerum illum fuga.
+        </p>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Font</th>
+                    <th>Align</th>
+                    <th>Line Height</th>
+                    <th>Letter Spacing</th>
+                    <th>Transform</th>
+                    <th>Decoration</th>
+                    <th>Indent</th>
+                    <th>Size</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <input type="radio" name="font" value="font-arial" checked> Arial<br>
+                        <input type="radio" name="font" value="font-times"> Times<br>
+                        <input type="radio" name="font" value="font-verdana"> Verdana<br>
+                        <input type="radio" name="font" value="font-georgia"> Georgia
+                    </td>
+
+                    <td>
+                        <input type="radio" name="align" value="text-left" checked> Left<br>
+                        <input type="radio" name="align" value="text-center"> Center<br>
+                        <input type="radio" name="align" value="text-right"> Right<br>
+                        <input type="radio" name="align" value="text-justify"> justify
+                    </td>
+
+
+                    <td>
+                        <input type="radio" name="line" value="line-normal" checked> Normal<br>
+                        <input type="radio" name="line" value="line-15"> 15px<br>
+                        <input type="radio" name="line" value="line-1_5"> 1.5<br>
+                        <input type="radio" name="line" value="line-2"> 2
+                    </td>
+
+                    <td>
+                        <input type="radio" name="space" value="space-normal" checked> Normal<br>
+                        <input type="radio" name="space" value="space-1"> -1px<br>
+                        <input type="radio" name="space" value="space-2"> 2px<br>
+                        <input type="radio" name="space" value="space-4"> 4px
+                    </td>
+
+                    <td>
+                        <input type="radio" name="transform" value="none-transform" checked> None<br>
+                        <input type="radio" name="transform" value="upper"> Upper<br>
+                        <input type="radio" name="transform" value="lower"> Lower<br>
+                        <input type="radio" name="transform" value="cap"> Capitalize
+                    </td>
+
+                    <td>
+                        <input type="radio" name="dec" value="dec-none" checked> None<br>
+                        <input type="radio" name="dec" value="dec-under"> Underline<br>
+                        <input type="radio" name="dec" value="dec-line"> Line<br>
+                        <input type="radio" name="dec" value="dec-over"> Overline
+                    </td>
+
+                    <td>
+                        <input type="radio" name="indent" value="indent0" checked> 0<br>
+                        <input type="radio" name="indent" value="indent20"> 20px<br>
+                        <input type="radio" name="indent" value="indent40"> 40px
+                    </td>
+
+                    <td>
+                        <input type="radio" name="size" value="size14"> 14<br>
+                        <input type="radio" name="size" value="size18" checked> 18<br>
+                        <input type="radio" name="size" value="size22"> 22<br>
+                        <input type="radio" name="size" value="size28"> 28
+                    </td>
+
+                    <td>
+                        <input type="radio" name="weight" value="weight-normal" checked> Normal<br>
+                        <input type="radio" name="weight" value="weight-bold"> Bold<br>
+                        <input type="radio" name="weight" value="weight-light"> Light
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="controls">
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
