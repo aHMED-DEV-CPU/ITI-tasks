@@ -1,0 +1,20 @@
+body {
+    font-family: Arial;
+}
+
+#car {
+    position: relative;
+    left: 0px;
+}
+
+#info {
+    margin-top: 20px;
+    font-family: Consolas;
+}
+
+#move , #info{
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
