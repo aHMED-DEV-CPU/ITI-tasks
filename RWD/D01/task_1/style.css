@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Navbar */
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: #2C2C2C;
+    color: #F3F4F4;
+    padding-block: 20px;
+    flex-wrap: wrap;
+}
+ul li{
+    flex-basis: 250px;
+    text-align: center;
+    padding: 20px;
+}
+/* Cards  */
+.box{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 250px;
+    gap: 20px;
+}
+.card1 , .card2 {
+    border: 1px solid black;
+    flex-basis:500px;
+display: flex;
+flex-direction: column;
+}
+.card1 p  , .card2 p{
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+}
+.card1 footer , .card2 footer {
+    text-align: center;
+        background-color: #2C2C2C;
+            color: #F3F4F4;
+}
