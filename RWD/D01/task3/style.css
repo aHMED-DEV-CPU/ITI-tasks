@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: #F7F8F0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #355872;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: #9CD5FF;
+    flex: 1 1 250px;
+}
+
+main {
+    background-color: #7AAACE;
+    flex: 2 1 400px;
+}
