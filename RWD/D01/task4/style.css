@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Intro + Slider */
+
+.intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.intro {
+    flex: 1 1 300px;
+    background: #ddd;
+    padding: 20px;
+}
+
+.slider {
+    flex: 2 1 300px;
+    background: #ccc;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 300px;
+    background: #ddd;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Recent */
+
+.recent {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Twitter */
+
+.twitter {
+    background: #ddd;
+    padding: 20px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
