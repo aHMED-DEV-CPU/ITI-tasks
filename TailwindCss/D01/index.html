@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class=" " data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title></title>
+</head>
+
+<body class=" transition-colors  duration-200">
+    <!-- navbar -->
+    <div class="navbar bg-base-100 shadow-sm dark:bg-gray-700">
+        <div class="navbar-start">
+
+            <a class="btn btn-ghost text-xl dark:text-gray-300">AG</a>
+        </div>
+
+        <div class="navbar-end ">
+            <a class="btn mx-5 btn-info" onclick="my_modal_3.showModal()">Login</a>
+
+            <a class=" btn btn-accent" id="themeBTN">Dark</a>
+        </div>
+    </div>
+    <!-- dialog -->
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box max-w-md bg-white dark:bg-gray-800 transition-colors duration-300 shadow-2xl rounded-2xl">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 dark:text-white ">
+                    ✕
+                </button>
+            </form>
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold dark:text-white">
+                    Welcome Back
+                </h2>
+                <p class="text-gray-500 dark:text-gray-300 mt-2">
+                    Sign in to your account
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div>
+                    <label class="label dark:text-white mb-1 block">
+                        Email
+                    </label>
+                    <input type="email" placeholder="Enter your email"
+                        class="input input-bordered w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
+                </div>
+                <div>
+                    <label class="label dark:text-white mb-1 block">
+                        Password
+                    </label>
+                    <input type="password" placeholder="Enter your password"
+                        class="input input-bordered w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-sm text-cyan-600 hover:underline">
+                        Forgot password?
+                    </a>
+                </div>
+                <button class="btn w-full bg-cyan-500 hover:bg-cyan-600 border-none text-white">
+                    Login
+                </button>
+            </div>
+        </div>
+    </dialog>
+    <!-- header -->
+    <header
+        class="grid grid-cols-1 md:grid-cols-12  min-h-[50vh] dark:bg-gray-800   transition-colors  duration-200 py-2.5">
+        <!-- text -->
+        <div class="lg:col-span-5 md:col-span-6 p-5 flex flex-row flex-wrap gap-2 order-2 md:order-1   ">
+            <div class=" w-6/12"><img src="./images/logo-brand.svg" class="object-fill" alt=""></div>
+            <h1 class=" text-4xl dark:text-white ">You can work from
+                Anywhere
+            </h1>
+            <h2 class=" text-4xl text-[#0fa9e6] font-bold ">Take advantage of it </h2>
+            <p class=" text-gray-700  transition-colors  duration-200 dark:text-gray-200">Workstations helps you find
+                work-friendly rentals in beautiful
+                locations so you
+                can enjoy some
+                nice weather even when you're not on a vacation </p>
+            <button class="  btn btn-info text-white ">Book
+                Your Escape</button>
+        </div>
+        <!-- image -->
+        <div class="lg:col-span-7 md:col-span-6 order-1 md:order-2  h-[380PX] w-full  ">
+            <div class=" h-full p-3 md:p-0  ">
+                <img src="images/beach-work.jpg" class=" h-full w-full object-cover rounded-2xl md:rounded-none " />
+            </div>
+        </div>
+    </header>
+    <main class=" py-5 bg-gray-200    transition-colors  duration-200 dark:bg-gray-700">
+
+
+
+        <div class=" w-3/4 mx-auto px-2  ">
+            <h3 class=" font-semibold  transition-colors  duration-200 dark:text-white">popular destination</h3>
+            <p class=" text-sm text-stone-700  transition-colors  duration-200 dark:text-stone-100">A selection of
+                great work-friendly cites with lots to
+                see and explore</p>
+            <!-- container -->
+            <div class=" grid grid-cols-1 md:grid-cols-12 py-5 gap-4 ">
+                <!-- cards -->
+                <div class="   card-sm ">
+                    <div class="  card-content ">
+                        <img src="images/chicago.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text">
+                        <h4 class="  ">chicago</h4>
+                        <p class=" p-muvae">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+                <div class=" card-sm">
+                    <div class="  card-content ">
+                        <img src="images/toronto.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text ">
+                        <h4 class="  ">Toronto</h4>
+                        <p class=" p-muvae ">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+                <div class=" card-sm">
+                    <div class="  card-content ">
+                        <img src="images/colorado.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text ">
+                        <h4 class="  ">colorado</h4>
+                        <p class=" p-muvae ">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+                <div class=" card-sm">
+                    <div class="  card-content ">
+                        <img src="images/malibu.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text ">
+                        <h4 class="  ">malibu</h4>
+                        <p class=" p-muvae ">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+                <div class=" card-sm">
+                    <div class="  card-content ">
+                        <img src="images/miami.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text ">
+                        <h4 class="  ">miami</h4>
+                        <p class=" p-muvae ">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+                <div class=" card-sm">
+                    <div class="  card-content ">
+                        <img src="images/seattle.jpg" class="  card-image" alt="">
+                    </div>
+                    <div class=" card-text ">
+                        <h4 class="  ">seattle</h4>
+                        <p class=" p-muvae ">
+                            $120 / night average</p>
+                        <p class=" p-cyan">explore
+                            76 properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        let HTML = document.documentElement
+        let themeBTN = document.getElementById("themeBTN")
+        themeBTN.addEventListener("click", () => {
+            HTML.classList.toggle("dark")
+            updateBTN()
+        })
+
+        function updateBTN() {
+            if (HTML.classList.contains("dark")) {
+                themeBTN.innerText = "Dark"
+                localStorage.setItem("theme", "dark")
+            } else {
+                themeBTN.innerText = "Light"
+                localStorage.setItem("theme", "light")
+            }
+        }
+
+        if (localStorage.theme === "dark" ||
+            (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            HTML.classList.add("dark")
+        } else {
+            HTML.classList.remove("dark")
+        }
+
+
+        updateBTN()
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@layer base {
+    h4 {
+        @apply font-bold transition-colors duration-200 dark:text-white
+    }
+}
+
+@layer components {
+    .card-sm {
+        @apply flex flex-row md:col-span-6 lg:col-span-4 rounded-xl overflow-hidden transition-transform hover:scale-105 hover:shadow-xl;
+    }
+
+    .card-content {
+        @apply basis-1/2 bg-white transition-colors duration-200 dark:bg-gray-800;
+    }
+
+    .card-text {
+        @apply basis-1/2 bg-white p-3 transition-colors duration-200 dark:bg-gray-800
+    }
+
+    .card-image {
+        @apply w-full h-full object-cover
+    }
+
+    .p-muvae {
+        @apply text-sm text-mauve-700 transition-colors duration-200 dark:text-mauve-200 py-3
+    }
+
+    .p-cyan {
+        @apply text-sm text-cyan-700 transition-colors duration-200 dark:text-cyan-200
+    }
+
+}
