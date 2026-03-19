@@ -1,0 +1,29 @@
+{
+  "devices": [
+    {
+      "id": "1",
+      "title": "MacBook Pro 14",
+      "description": "Powerful laptop with M3 chip and Retina display",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+    },
+    {
+      "id": "2",
+      "title": "Dell XPS 13",
+      "description": "Compact and premium ultrabook with InfinityEdge display",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+    },
+    {
+      "id": "3",
+      "title": "HP Spectre x360",
+      "description": "2-in-1 convertible laptop with touch screen",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    },
+    {
+      "id": "4",
+      "title": "Lenovo ThinkPad X1",
+      "description": "Business laptop with strong performance and durability",
+      "image": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
