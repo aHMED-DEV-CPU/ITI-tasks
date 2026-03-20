@@ -1,0 +1,13 @@
+.unLike {
+    color: gray;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+
+}
+
+.unLike-active,
+.unLike:hover {
+    color: tomato;
+}

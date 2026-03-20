@@ -1,0 +1,119 @@
+main {
+    margin-top: 80.4px;
+    padding-block: 15px;
+    margin-bottom: 90.4px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.form-section {
+
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section #form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section button {
+    padding: 10px;
+    border: none;
+    background: #00adb5;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.carousel .container {
+
+    position: relative;
+    width: 65%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.carousel .container .image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel .container .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .container .controlling {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.carousel .container .controlling button {
+    font-size: 2.7rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #00adb5;
+
+}
+
+.carousel .container .controlling button:hover {
+    color: #09474b;
+}
+
+
+
+@media (max-width: 992px) {
+    .cards-section {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 792px) {
+
+    .cards-section {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards-section {
+        grid-template-columns: 1fr;
+    }
+}

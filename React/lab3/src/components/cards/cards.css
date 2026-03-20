@@ -1,0 +1,31 @@
+.card {
+    background: rgb(250, 250, 250);
+    color: #222;
+    box-shadow: #2222227a 0px 0px 10px 1px;
+    ;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.interactions {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+}
