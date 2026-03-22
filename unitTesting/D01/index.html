@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Unit Testing</h1>
+    <form id="myForm">
+        <input id="numInput" type="number" placeholder="Enter number">
+        <input id="strInput" type="text" placeholder="Enter text">
+        <button type="submit">Submit</button>
+
+    </form>
+    <p id="message"></p>
+
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script>
+        mocha.setup("bdd")
+    </script>
+
+    <script type="module">
+
+        import * as chai from "https://cdn.jsdelivr.net/npm/chai/+esm";
+
+        window.expect = chai.expect;
+        window.assert = chai.assert;
+        chai.should();
+
+        await import("./test/index.test.js");
+
+        mocha.run();
+
+    </script>
+
+</body>
+
+</html>
