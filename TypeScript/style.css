@@ -1,0 +1,132 @@
+/* body*/
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0ea5e9, #9333ea, #0f172a);
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.game-wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.grid {
+    display: grid;
+
+    /* 🔥 auto-fit makes it responsive */
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+
+    gap: 12px;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* card */
+.card {
+    aspect-ratio: 1 / 1;
+    position: relative;
+
+    cursor: pointer;
+    border-radius: 14px;
+    overflow: hidden;
+
+    border: 2px solid transparent;
+    background: linear-gradient(#1f2937, #111827) padding-box,
+        linear-gradient(135deg, #38bdf8, #a78bfa) border-box;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.back {
+    display: none;
+}
+
+.card.flipped .front {
+    display: none;
+}
+
+.card.flipped .back {
+    display: block;
+}
+
+
+.card.matched {
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 12px #22c55e;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .card {
+        border-radius: 12px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(5, 140px);
+        max-width: 800px;
+        gap: 18px;
+    }
+
+    .card {
+        border-radius: 16px;
+    }
+}
+
